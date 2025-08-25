@@ -10,6 +10,8 @@ const App = () => {
     setShowStartPage(false);
   };
 
+console.log("Quiz import:", Quiz);
+
 return (
     <div className="center">
       <div className="container">

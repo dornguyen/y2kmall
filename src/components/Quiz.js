@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Question from "./Question";
 import Result from "./Result";
+//import "../styles/submit-btn.css"
 
-//import "../styles/next-btn.css"
+console.log("Question import:", Question);
 
 const questions = [
   {
@@ -66,6 +67,22 @@ function Quiz() {
         setScores({});
         setResult(null);
     }
+
+    return (
+        <div className="quiz-container-with-submit">
+            <Question
+                question={questions[currentQuestion].question}
+                options={questions[currentQuestion].options}
+                onAnswer={handleAnswer}
+                selectedAnswer={selectedAnswer}
+            />
+
+            <button className="submit-btn"
+                onClick={handleNextQuestion}
+                disabled={!selectedAnswer}  // Disable the button until an answer is selected
+            > Submit Answer </button>
+        </div>
+    );
 }
 
 export default Quiz;
