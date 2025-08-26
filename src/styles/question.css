@@ -1,0 +1,21 @@
+.question-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-page button {
+    background-color: #F9F9F9;
+    border: 1px solid #FFFFFF;
+    box-shadow: inset 0 4px 10px rgba(38, 38, 38, 0.5);
+    color: #7501A2;
+    width: 350px;
+    margin: 10px;
+}
+
+.question-page button.selected {
+    background-color: #7501A2;
+    color: #FFFFFF;
+    border: 1px solid #D604C3;
+    box-shadow: inset 0 4px 10px #D977FF;
+}

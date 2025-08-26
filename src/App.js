@@ -10,14 +10,12 @@ const App = () => {
     setShowStartPage(false);
   };
 
-console.log("Quiz import:", Quiz);
-
 return (
     <div className="center">
       <div className="container">
         {showStartPage ? (
           <div className="start-page">
-            <h1 className="title">LET’S GO TO THE MALL!</h1>
+            <h1 className="title">LET’S GO TO THE <span>MALL!</span> </h1>
             <p className="subtitle">
               Find out which 2000s fashion staple is soooo you!
             </p>

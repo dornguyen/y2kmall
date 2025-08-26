@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import Question from "./Question";
 import Result from "./Result";
-//import "../styles/submit-btn.css"
-
-console.log("Question import:", Question);
+import "../styles/submit-btn.css"
 
 const questions = [
   {
     question: "You’re at the mall! First stop?",
     options: [
-      { text: "Look for your favorite artist’s new CD", fashion_trend: "" },
-      { text: "Grab a smoothie", fashion_trend: "" },
-      { text: "Browse the window displays", fashion_trend: "" }
+      { text: "Look for your favorite artist’s new CD", fashion_trend: "sample1" },
+      { text: "Grab a smoothie", fashion_trend: "sample2" },
+      { text: "Browse the window displays", fashion_trend: "sample3" }
     ]
   },
 ];
