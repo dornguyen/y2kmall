@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Question from "./Question";
 import Result from "./Result";
-import "../styles/submit-btn.css"
 
 const questions = [
   {

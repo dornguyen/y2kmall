@@ -13,7 +13,7 @@
     margin: 10px;
 }
 
-.question-page button.selected {
+.question-page button.selected, .question-page button:hover {
     background-color: #7501A2;
     color: #FFFFFF;
     border: 1px solid #D604C3;
